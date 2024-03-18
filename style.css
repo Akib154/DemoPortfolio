@@ -1,5 +1,10 @@
 *{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', Times, serif;
+    /* background-color: #6042a7; */
+   
+}
+body{
+   /* color: whitesmoke; */
 }
 .head{
     display: flex;
@@ -45,6 +50,7 @@ ul>li{
     padding: 5%;
     justify-content: center;
     border-radius: 50%;
+    width: 350px;
     max-width: 60%;
     height: auto;
     
@@ -99,21 +105,42 @@ ul>li{
     background-color: #85e272;
     border: 3px solid black;
     width: full;
-    height: 250px;
+    height: 400px;
     border-radius: 18px;
     margin: 5px;
     text-emphasis-color: aliceblue;
     
 
  }
+ .education, .experience{
+   display: flex;
+   justify-content: center;
+ }
  .edChild{
-    display: grid;
     background-color: #b98ff0;
     border: 3px solid black;
-    width: full;
-    height: 250px;
+    width: 600px;
+    max-width:auto;
+    height: 300px;
     border-radius: 18px;
     margin: 5px;
-    text-emphasis-color: aliceblue;
+    text-align: center;
     
  }
+
+.skill >label{
+   display: flex;
+   padding:14px;
+   justify-content: flex-start;
+   
+   
+ }
+progress{
+   display: inline-block;
+   padding-down: 5px; 
+   
+ }
+.skill{
+   text-align: center;
+
+} 
