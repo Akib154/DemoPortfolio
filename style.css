@@ -1,18 +1,33 @@
-*{
-    font-family: 'Roboto', Times, serif;
-    /* background-color: #6042a7; */
-   
+* {
+   font-family: 'Roboto', Times, serif;
+   /* background-color: #6042a7; */
+
 }
-body,html{
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #f5f5f5;
+   color: #fff;
+   padding: 5px;
+}
+
+
+body,
+html {
    /* color: whitesmoke; */
    height: 100%;
 }
-body > div{
+
+body>div {
    padding-bottom: 1%;
    background-color: #FFFFFF;
 }
-.parallax{
-   background-image:url(mosque.jpg);
+
+.parallax {
+   background-image: url(mosque.jpg);
    height: 35%;
    background-attachment: fixed;
    background-position: center;
@@ -20,13 +35,16 @@ body > div{
    background-size: cover;
    /* border: 5px solid blue; */
 }
-header{
+
+header {
    background-attachment: fixed;
 }
-.head{
-    display: flex;
-    justify-content: space-around ;
+
+.head {
+   display: flex;
+   justify-content: space-around;
 }
+
 /* .head{
     display: flex;
     justify-content: center;
@@ -53,141 +71,190 @@ ul > li{
    justify-content: flex-end;
 } */
 ul {
-    display: flex;
-    text-align:center;
-    
-} 
-ul>li{
-    padding-right:10%;
-    padding-left: -20%;
-    list-style: none;
- }
-.section > img{
-    display: flex;
-    background-position-x: left;
-    padding: 5%;
-    justify-content: center;
-    border-radius: 50%;
-    width: 350px;
-    max-width: 60%;
-    height: auto;
-    
- }
- .para{
-    border: 1px solid black;
-    
- }
- .card1{
-    padding-top: 40px;
-    text-align: center;
-   
- }
- .inner >p {
-    border: 1px solid black;
-    text-align:left;
- }
- .doCard{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    gap: 20px;
- }
- .doCardChild{
-    background-color: rgb(238, 255, 0);
-    width: full;
-    height: 230px;
-    border-radius: 14px;
- }
- .project{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding: 10px;
-    gap: 20px;
- }
- .proChild{
-    
-    border: 4px solid rgb(219, 4, 4);
-    width: full;
-    height: 400px;
-    border-radius: 18px;
-    
- } 
- .proChild > img{
-    max-width: 100%;
-    border-radius:13px ;
-    
-    object-fit:contain;
- }
- .exChild{
-    display: grid;
-    background-color: #85e272;
-    border: 3px solid black;
-    width: full;
-    height: 400px;
-    border-radius: 18px;
-    margin: 5px;
-    text-emphasis-color: aliceblue;
-    
-
- }
- .education, .experience{
    display: flex;
-   justify-content: center;
- }
- .edChild{
-    background-color: #b98ff0;
-    border: 3px solid black;
-    width: 600px;
-    max-width:auto;
-    height: 300px;
-    border-radius: 18px;
-    margin: 5px;
-    text-align: center;
-    
- }
-
-.skill >label{
-   display: flex;
-   padding:14px;
-   justify-content: flex-start;
-   
-   
- }
-progress{
-   display: inline-block;
-   padding-down: 5px; 
-   
- }
-.skill{
    text-align: center;
 
-} 
+}
 
-.testimonial{
+ul>li {
+   padding-right: 10%;
+   padding-left: -20%;
+   list-style: none;
+}
+
+#img {
+   /* display: flex; */
+   /* align-items: center; */
+   /* background-position-x: left; */
+   /* padding: 5%; */
+   /* justify-content: center; */
+   /* border-radius: 50%; */
+   /* width: 350px; */
+   /* max-width: 60%; */
+   /* height: auto; */
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   /* padding: 5%; */
+   /* border-radius: 50%; */
+   width: 300px;
+   max-width: auto;
+   height: 450px;
+   border: 5px solid green;
+
+}
+
+.para {
+   border: 1px solid black;
+   margin: 100px;
+   margin-bottom: 0px;
+   padding: 20px;
+
+}
+
+.card1 {
+   padding-top: 40px;
+   text-align: center;
+
+}
+
+.inner>p {
+   border: 1px solid black;
+   text-align: left;
+}
+
+.doCard {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   padding: 10px;
+   gap: 20px;
+}
+
+.doCardChild {
+   background-color: rgb(238, 255, 0);
+   width: full;
+   height: 230px;
+   border-radius: 14px;
+}
+
+.project {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   padding: 10px;
+   gap: 20px;
+}
+
+.proChild {
+
+   border: 4px solid rgb(219, 4, 4);
+   width: full;
+   height: 400px;
+   border-radius: 18px;
+
+}
+
+.proChild>img {
+   max-width: 100%;
+   border-radius: 13px;
+
+   object-fit: contain;
+}
+
+.exChild {
+   display: grid;
+   background-color: #85e272;
+   border: 3px solid black;
+   width: full;
+   height: 400px;
+   border-radius: 18px;
+   margin: 5px;
+   text-emphasis-color: aliceblue;
+
+
+}
+
+.education,
+.experience {
+   display: flex;
+   justify-content: center;
+}
+
+.edChild {
+   background-color: #b98ff0;
+   border: 3px solid black;
+   width: 600px;
+   max-width: auto;
+   height: 300px;
+   border-radius: 18px;
+   margin: 5px;
+   text-align: center;
+
+}
+
+.skill>label {
+   display: flex;
+   padding: 14px;
+   justify-content: flex-start;
+
+
+}
+
+pro {
+
+   padding-bottom: 30%;
+
+}
+
+.skill {
+   text-align: center;
+
+}
+
+.testimonial {
    margin: 10%;
 }
 
 .cards {
-  display: flex;
+   display: flex;
 }
+
 .card {
-  background-color: rgb(245, 224, 224);
-  border: 3px solid black;
-  border-radius: 1rem;
-  padding: 1.5rem;
-  box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
-  transition: 0.2s;
+   background-color: rgb(245, 224, 224);
+   border: 3px solid black;
+   border-radius: 1rem;
+   padding: 1.5rem;
+   box-shadow: 3px 3px 12px 2px rgba(black, 0.6);
+   transition: 0.2s;
 }
+
 .card:not(:first-child) {
-  margin-left: -2rem;
+   margin-left: -2rem;
 }
+
 .card:not(:last-child):hover,
 .card:not(:last-child):focus-within {
-  transform: translateY(-1rem);
-  ~ .card {
-    transform: translateX(2rem);
-  }
+   transform: translateY(-1rem);
+
+   ~.card {
+      transform: translateX(2rem);
+   }
 }
-.video{
+
+.video {
    margin: 10%;
+}
+
+.portfolio-img {
+   width: 400px;
+   height: 400px;
+   border-radius: 50%;
+
+}
+
+.parents-img {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: full;
+   height: 500px;
 }
